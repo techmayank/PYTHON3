@@ -1,0 +1,6 @@
+Flask is a micro web framework written in Python and based on the Werkzebug toolkit and jinja template engine.
+Flask features are----
+Uses jinja2 templating engine
+Support for secure cookies
+100% WSGI 1.0 compliant
+Google app engine compatibiity

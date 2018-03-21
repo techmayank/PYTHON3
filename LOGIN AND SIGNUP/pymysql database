@@ -1,0 +1,19 @@
+@app.route('/whale',methods=['POST','GET'])
+def whale():
+    if request.method=='POST':
+        g=request.form['userid']
+        h=request.form['password']
+        i=request.form['firstname']
+        j=request.form['lastname']
+        k=request.form['mail']
+        l=request.form['mobile']
+        db=pymysql.connect('localhost','root','mayank@7857','signup')
+        cursor=db.cursor()
+        sql="INSERT INTO login2(Username,Password,FirstName,LastName,Mail,Mobile) values('"+g+"','"+h+"','"+i+"','"+j+"','"+k+"','"+l+"')"
+        try:
+            cursor.execute(sql)
+            db.commit()
+        except:
+            db.rollback()
+        finally:
+            return'record added successfully'

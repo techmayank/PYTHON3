@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register yourself on this page</title>
+<style>
+.account{
+  background-color: white;
+  font-size: 1.5em;
+}
+.personal{
+  background-color: grey;
+  font-size: 1.5em;
+}
+.resident{
+  background-color: pink;
+  font-size: 1.5em;
+}
+#top{
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 4em;
+  font-family: Herculanum;
+}
+body{
+  background: linear-gradient(to right, pink , white);
+  background-attachment: fixed;
+}
+.blank{
+  background-color: transparent;
+}
+.flex-container{
+  display: flex;
+  height: 750px;
+  background: linear-gradient(to right, rgba(192,192,192,0) , rgba(0,255,255,0.6));
+  justify-content: space-around;
+  flex-direction: column;
+}
+.flex-container > div{
+  background-color: white;
+  background: linear-gradient(to right, red , black);
+  font-size: 20px;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+</style>
+</head>
+<body>
+  <div id ='top'>Smart Parking System</div>
+  <div class = 'blank' style="height:110px"></div>
+  <h1 style="text-align: center">"Sign-Up"</h1>
+  <div class = 'blank' style="height:10px"></div>
+  <form method="POST" action="">
+  <div class="flex-container">
+  <div>
+    <h3 style="text-align: left">Login Information</h3>
+    <ul>
+    <li><label for = 'userid'>User Id</label><br></li>
+      <input type = 'text' name = 'userid' required><br>
+    <li><label for = 'password'>Password</label><br></li>
+      <input type = 'password' name = 'password' required><br>
+    </ul>
+  </div>
+  <div>
+    <h3 style="text-align: left">Personal Information</h3>
+    <ul>
+    <li><label for = 'firstname'>First Name</label></li>
+      <input type = 'text' name = 'firstname' required><br>
+    <li><label for = 'lastname'>Last Name</label><br></li>
+      <input type = 'text' name = 'lastname' required><br>
+    <li><label for = 'dob'>Date of Birth</label><br></li>
+      <input type = 'date' name = 'dob' required><br>
+    <li><label for = 'mail'>E-mail</label><br></li>
+      <input type = 'text' name = 'mail' required><br>
+    <li><label for = 'mobile'>Mobile</label><br></li>
+      <input type = 'text' name = 'mobile' required><br>
+    </ul>
+  </div>
+  <div>
+    <h3 style="text-align: left">Address</h3>
+    <ul>
+      <li><label for = 'flat'>Residential Address</label><br></li>
+      <textarea name = 'flat' value = 'Enter your full address here' required></textarea>
+    </ul>
+  </div>
+      <br><br>
+</div>
+      <input type = 'submit' value='Submit'>
+</form>
+</body>
+</html>

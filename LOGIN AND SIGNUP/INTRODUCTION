@@ -1,0 +1,3 @@
+In this particular chapter we will take details from user and store the information into the database.
+The database which we are using is mysql which we will access through our python scripting languages...
+in the second file there will be an html page which is basically a sigup page and in next file will be a python scripting language that will send data to our databse

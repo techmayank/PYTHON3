@@ -1,0 +1,21 @@
+ 
+@app.route('/hey',methods=['POST','GET'])
+def hey():
+    if request.method=='POST':
+        a=request.form['username']
+        db=pymysql.connect('localhost','root','mayank@7857','signup')
+        cursor=db.cursor()
+        sql="select Password from login2 where Username='%s'"%(a)
+        cursor.execute(sql)
+        b=cursor.fetchone()
+        d=b[0]
+        c=request.form['password']
+ 
+        try:
+            if d==c:
+                return render_template('book_parking1.html')
+ 
+            else:
+                return "password is incorrect"
+        except:
+            db.rollback()

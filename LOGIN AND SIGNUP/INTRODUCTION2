@@ -1,0 +1,5 @@
+in this part i have prepared a login page that is after doing signup the user will have a unique id and password,
+which he/she will use to access the account .
+as the user enter the unique id and password it will search from the database (i am using mysql database) and if the related information is correct
+the user account will get open.
+and if the related information is incorrect he will be redirected to the signup page agin.

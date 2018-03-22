@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Your Parking Online</title>
+  <style>
+  #head{
+    background-color: white;
+    padding-left: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 3.2em;
+  }
+  a{
+    text-decoration: none;
+  }
+  .blank{
+    background-color: transparent;
+  }
+  .flex-container{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    height: 400px;
+  }
+  .flex-container > div{
+    background-color: red;
+    padding: 0.2em;
+  }
+  </style>
+</head>
+<body style="background-color: blue;">
+  <div id = 'head'>Online Parking Booking System</div>
+  <div class = "blank" style="height: 40px"></div>
+  <form method="POST" action="">
+  <div class="flex-container" style = 'align-items: center;'>
+    <div style = 'width: 250px'>
+      <h3>Login information</h3>
+      <ul>
+        <li><label for = 'fullname'>Full Name : </label></li>
+        <input typr = 'text' name = 'fullname'><br>
+        <li><label for="user">User-Id : </label></li>
+        <input type = 'text' name = 'user'><br>
+        <li><label for = 'pwd'>Password : </label></li>
+        <input type="password" name = 'pwd'>
+        <input type="submit" value = 'Login'>
+      </ul>
+   <p>Not having an account?? <a href = "/Users/ujjwalprakash/nodeprojects/signup_page.html" target ="blank">Sign up here</a></p>
+   </div>
+   <div style = 'width: 1000px; height: 24.33em; color: black;'>
+     <h2><marquee>Forget Waiting , Book your parking online</marquee></h2>
+     <p style = 'font-size: 25px'>We , at TechTracKers are committed towards building a techno-friendly environment where technology will fulfill our needs . Following this , we have come up with a online parking Reservation System by virtue of which you can reserve your parking space online. So , book your parking in advance and experience a hassle free travel.</p>
+   </div>
+  </div>
+</form>
+</body>
+</html>
